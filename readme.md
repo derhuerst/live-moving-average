@@ -1,5 +1,7 @@
 # live-moving-average
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/live-moving-average.svg)](https://greenkeeper.io/)
+
 **An ever updating average of the last n values.** See [Moving Average](https://en.wikipedia.org/wiki/Moving_average).
 
 Reuses the values array to prevent GC-thrashing. Does not slow down with an increasing window size:
