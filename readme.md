@@ -15,6 +15,7 @@ window size 100, 1 push, 10 get x 28,240,783 ops/sec ±0.43% (96 runs sampled)
 [![build status](https://img.shields.io/travis/derhuerst/live-moving-average.svg)](https://travis-ci.org/derhuerst/live-moving-average)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/live-moving-average.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Installing
