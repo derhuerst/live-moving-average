@@ -1,29 +1,32 @@
 'use strict'
 
-const test = require('tape')
+const a = require('assert')
 
 const createWindow = require('.')
 
-test('works', (t) => {
-	const avg = createWindow(3, 0)
+// basic test
 
-	t.equal(avg.get(), 0)
+const avg1 = createWindow(3, 0)
+a.strictEqual(avg1.get(), 0)
 
-	avg.push(2)
-	avg.push(3)
-	avg.push(4)
-	t.equal(avg.get(), 3) // (2 + 3 + 4) / 3
+avg1.push(2)
+avg1.push(3)
+avg1.push(4)
+a.strictEqual(avg1.get(), 3) // (2 + 3 + 4) / 3
 
-	avg.push(5)
-	t.equal(avg.get(), 4) // (3 + 4 + 5) / 3
+avg1.push(5)
+a.strictEqual(avg1.get(), 4) // (3 + 4 + 5) / 3
 
-	avg.push(6)
-	t.equal(avg.get(), 5) // (4 + 5 + 6) / 3
+avg1.push(6)
+a.strictEqual(avg1.get(), 5) // (4 + 5 + 6) / 3
 
-	avg.push(7)
-	t.equal(avg.get(), 6) // (5 + 6 + 7) / 3
+avg1.push(7)
+a.strictEqual(avg1.get(), 6) // (5 + 6 + 7) / 3
 
-	t.end()
-})
+// works with fill
 
-// todo: test with fill !== 0
+const avg2 = createWindow(3, 3)
+
+a.strictEqual(avg2.get(), 3)
+avg2.push(6)
+a.strictEqual(avg2.get(), (3 + 3 + 6) / 3)
