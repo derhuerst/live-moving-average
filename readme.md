@@ -5,10 +5,10 @@
 Reuses the values array to prevent GC-thrashing. Does not slow down with an increasing window size:
 
 ```
-window size 10, 1 push, 1 get x 38,591,962 ops/sec ±0.66% (89 runs sampled)
-window size 10, 1 push, 10 get x 27,893,789 ops/sec ±0.80% (90 runs sampled)
-window size 1000, 1 push, 1 get x 38,770,793 ops/sec ±0.56% (87 runs sampled)
-window size 100, 1 push, 10 get x 28,240,783 ops/sec ±0.43% (96 runs sampled)
+window size 10, 1 push, 1 get x 52,341,933 ops/sec ±0.26% (92 runs sampled)
+window size 10, 1 push, 10 get x 35,395,743 ops/sec ±4.57% (87 runs sampled)
+window size 1000, 1 push, 1 get x 51,765,093 ops/sec ±0.65% (87 runs sampled)
+window size 100, 1 push, 10 get x 37,744,938 ops/sec ±0.94% (91 runs sampled)
 ```
 
 [![npm version](https://img.shields.io/npm/v/live-moving-average.svg)](https://www.npmjs.com/package/live-moving-average)
@@ -58,7 +58,7 @@ avg.get() // 6, because (5 + 6 + 7) / 3
 
 ### `w.get()`
 
-Returns a number.
+Returns the moving average.
 
 
 ## Contributing
