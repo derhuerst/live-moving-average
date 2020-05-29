@@ -11,11 +11,10 @@
 
 Reuses the values array to prevent GC-thrashing. Does not slow down with an increasing window size:
 
-```
-window size 10, 1 push, 1 get x 52,341,933 ops/sec ±0.26% (92 runs sampled)
-window size 10, 1 push, 10 get x 35,395,743 ops/sec ±4.57% (87 runs sampled)
-window size 1000, 1 push, 1 get x 51,765,093 ops/sec ±0.65% (87 runs sampled)
-window size 100, 1 push, 10 get x 37,744,938 ops/sec ±0.94% (91 runs sampled)
+```window size 10, 1 push, 1 get x 65,514,574 ops/sec ±0.62% (90 runs sampled)
+window size 10, 1 push, 10 get x 49,988,485 ops/sec ±0.28% (93 runs sampled)
+window size 1000, 1 push, 1 get x 64,048,288 ops/sec ±0.42% (93 runs sampled)
+window size 100, 1 push, 10 get x 49,012,149 ops/sec ±0.40% (95 runs sampled)
 ```
 
 
@@ -64,4 +63,4 @@ Returns the moving average.
 
 ## Contributing
 
-If you have a question or have difficulties using `live-moving-average`, please double-check your code and setup first. If you think you have found a bug or want to propose a feature, refer to [the issues page](https://github.com/derhuerst/live-moving-average/issues).
+If you have a question or need support using `live-moving-average`, please double-check your code and setup first. If you think you have found a bug or want to propose a feature, use [the issues page](https://github.com/derhuerst/live-moving-average/issues).

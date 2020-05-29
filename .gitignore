@@ -3,8 +3,8 @@ Thumbs.db
 
 .nvm-version
 node_modules
-npm-debug.log
 pnpm-debug.log
 
-package-lock.json
-shrinkwrap.yaml
+/package-lock.json
+/yarn.lock
+/shrinkwrap.yaml

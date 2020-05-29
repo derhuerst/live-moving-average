@@ -1,7 +1,7 @@
 {
 	"name": "live-moving-average",
 	"description": "An ever updating average of the last n values.",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -22,7 +22,7 @@
 	"bugs": "https://github.com/derhuerst/live-moving-average/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"devDependencies": {
 		"benchmark": "^2.1.4"
