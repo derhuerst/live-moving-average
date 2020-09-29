@@ -5,11 +5,11 @@ const createWindow = require('.')
 const avgOfLast3 = createWindow(3, 0)
 avgOfLast3.get() // 0
 
-avgOfLast3.
-    push(2).
-    push(3).
-    push(4).
-    get() // (2 + 3 + 4) / 3 = 3
+avgOfLast3
+    .push(2)
+    .push(3)
+    .push(4)
+    .get() // (2 + 3 + 4) / 3 = 3
 
 avgOfLast3.push(5)
 avgOfLast3.get() // (3 + 4 + 5) / 3 = 4
