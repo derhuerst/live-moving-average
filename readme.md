@@ -32,10 +32,12 @@ const createWindow = require('live-moving-average')
 
 const avg = createWindow(3, 0) // size of 3, fill with 0
 
-avg.push(2)
-avg.push(3)
-avg.push(4)
-avg.get() // 3, because (2 + 3 + 4) / 3
+// using fluent push()
+avg.
+  push(2).
+  push(3).
+  push(4).
+  get() // 3, because (2 + 3 + 4) / 3
 
 avg.push(5)
 avg.push(6)
@@ -54,7 +56,8 @@ avg.get() // 6, because (5 + 6 + 7) / 3
 
 ### `w.push(val)`
 
-`val` must be a number.
+`val` must be a number.    
+Returns `this`.
 
 ### `w.get()`
 

@@ -8,7 +8,9 @@ const LiveMovingAverage = {
 		this.sum += val
 
 		this.data[this.dataI] = val
-		this.dataI = (this.dataI + 1) % this.size
+    this.dataI = (this.dataI + 1) % this.size
+    
+    return this
 	},
 
 	get: function () {
