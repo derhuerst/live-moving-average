@@ -9,6 +9,8 @@ const LiveMovingAverage = {
 
 		this.data[this.dataI] = val
 		this.dataI = (this.dataI + 1) % this.size
+
+		return this
 	},
 
 	get: function () {

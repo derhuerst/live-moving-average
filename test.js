@@ -23,6 +23,8 @@ a.strictEqual(avg1.get(), 5) // (4 + 5 + 6) / 3
 avg1.push(7)
 a.strictEqual(avg1.get(), 6) // (5 + 6 + 7) / 3
 
+a.strictEqual(avg1.push(5).get(), 6) // (6 + 7 + 5) / 3
+
 // works with fill
 
 const avg2 = createWindow(3, 3)
