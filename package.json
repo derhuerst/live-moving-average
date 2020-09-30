@@ -1,7 +1,7 @@
 {
 	"name": "live-moving-average",
 	"description": "An ever updating average of the last n values.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
